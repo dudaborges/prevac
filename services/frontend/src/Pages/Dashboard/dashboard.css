@@ -1,0 +1,88 @@
+/* dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  transition: margin-left .5s;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-left: 80px;
+  transition: margin-left .5s;
+}
+
+.menu-lateral.expandir ~ .dashboard-container .main-content {
+  margin-left: 260px;
+}
+
+
+.sensor-status {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b0ff9d;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.status-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.status-ok {
+  font-size: 24px;
+  color: green;
+}
+
+.sensor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.sensor-table-header {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.sensor-table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sensor-table-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.buttons-dashboard {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Button-sensors {
+  padding: 10px 20px;
+  background-color: #dfdfdf;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Button-sensors:hover {
+  color: #fff;
+  background-color: #9b9b9b;
+}
+

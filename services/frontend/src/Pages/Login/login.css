@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+body{
+    margin: 0;
+}
+.bodyhome{
+    position: relative; 
+    background-color: #0C4F6C;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.TitulosHome{
+    margin: 15% 0;
+}
+.title1{
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.containerHome{
+    width: 70%;
+    height: 90vh;
+}
+.sectionHome{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageHome{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../imagens/imageHome.png");
+    border-radius: 10px  10px 70px 10px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* estilo da mensagem de erro */
+.error {
+  color: red;
+  font-size: 1em;
+  font-family: "Abel", sans-serif;
+  margin-top: 10px;
+}
+
+/*olho senha*/
+
+.Eye{
+  width: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: #0c4f6c;
+}
+
+/* ------------------------------------------- */
+
+
+.login-form {
+    border-radius: 70px  10px 70px 10px;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.login-form h1 {
+    font-family: "Abel", sans-serif;
+    margin: 0;
+    font-size: 2em;
+    color: #0C4F6C;
+}
+  
+.Logintext {
+    font-family: "Abel", sans-serif;
+    margin-top: 10px;
+    font-size: 1.4em;
+    color: #666;
+}
+  
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.login-form label {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #0C4F6C;
+}
+  
+.login-form input {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-container input {
+    flex: 1;
+}
+
+.toggle-password {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #00bfff;
+    text-decoration: none;
+}
+  
+.forgot-password:hover {
+    text-decoration: underline;
+}
+  
+.ButtonLoginLink{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #0C4F6C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.ButtonLoginLink:hover {
+    background-color: #0e5f81;
+}

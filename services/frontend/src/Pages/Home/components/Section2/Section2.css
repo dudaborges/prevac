@@ -1,0 +1,93 @@
+/* Estilos para a seção Home Page */
+.homePage {
+    padding: 0rem 0 4rem 0;
+  }
+  .homePage4 {
+    padding: 5rem 0 2.5rem 0;
+    background-color: #000;
+    clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0 101%);
+  }
+  
+  .container-homePage {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .contentHome {
+    align-items: flex-start;
+    max-width: 37rem;
+  }
+  
+  .titleHomePage {
+    font-family: "Abel", sans-serif;
+    color: #fff;
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+  }
+  .titleHomePage2 {
+    font-family: "Abel", sans-serif;
+    color: #0066cc;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+  }
+  .titleHomePage3 {
+    font-family: "Abel", sans-serif;
+    color: #ffffff;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+  }
+  
+  .descriptionPageHome{
+    font-family: "Abel", sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 5px 0 3rem;
+  }
+  .descriptionPageHome2 {
+    font-family: "Abel", sans-serif;
+    color: #000000;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin: 5px 0 3rem;
+  }
+  .descriptionPageHome3  {
+    font-family: "Abel", sans-serif;
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin: 5px 0 3rem;
+  }
+  
+  .buttonHome-a {
+    display: inline-block;
+    background-color: #0066cc;
+    padding: 12px 36px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Abel", sans-serif;
+    transition: all 0.5s;
+  }
+  
+  .image-containerHomePage {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .imagePage img {
+    width: 430px;
+  }
+  .imagePage2 img {
+    width: 530px;
+    padding: 30px;
+  }

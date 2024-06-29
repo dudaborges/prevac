@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* Estilos para as seções principais (Main-Section3 e Main-Section4) */
+.Main-Section3, .Main-Section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Main-Section4 {
+  background-color: #000;
+  clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0 101%);
+}
+
+.producao-aulas, .producao-aulas2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.producao-aulas2 {
+  padding-top: 100px;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageLaptop, .ImageLaptop2 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ImageLaptop2 {
+  width: 70%;
+}
+
+.content-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.Title-section3, .Title-section4 {
+  font-family: "Abel", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.Title-section3 {
+  color: #000;
+  margin-right: 25px;
+}
+
+.Title-section4 {
+  padding-left: 60px;
+  color: #ffffff;
+}
+
+.sub-title-section3, .sub-title-section4 {
+  font-family: "Abel", sans-serif;
+  line-height: 1.7;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.sub-title-section3 {
+  color: #555;
+  padding-right: 40px;
+  margin-right: 25px;
+}
+
+.sub-title-section4 {
+  color: #ffffff;
+  padding-left: 60px;
+}
+
+.descriptionPageHome3 {
+  font-family: "Abel", sans-serif;
+}
+
+.descriptionPageHomeBullet li {
+  font-family: "Abel", sans-serif;
+  color: #ffffff; 
+  font-size: 1.1rem;
+  margin: 5px 0 1rem;
+}

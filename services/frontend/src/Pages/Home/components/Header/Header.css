@@ -1,0 +1,135 @@
+/* Estilos para o cabeçalho (nav) */
+.header {
+    position: fixed; /* Mantém o cabeçalho fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    z-index: 100;
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+  }
+  
+  .header.scrolled {
+    background-color: #000000; /* Cor de fundo quando a página é rolada */
+  }
+  
+  .image-slider-container {
+    position: relative;
+  }
+  
+  .image-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .divlogo {
+    width: 10%;
+  }
+  
+  .logoPrevac {
+    width: 100%;
+  }
+  
+  .optionsHeader {
+    font-family: "Abel";
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .optionSelect, .optionSelect2 {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .optionSelect2 {
+    background-color: #0066cc;
+    padding: 10px 50px;
+    border-radius: 20px;
+  }
+
+
+  /* Estilos para o slider */
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 10s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.slide.active img {
+  transform: scale(1.1);
+}
+
+.text-overlay {
+  width: 60%;
+  font-family: "Abel", sans-serif;
+  position: absolute;
+  font-weight: 500;
+  bottom: 50px;
+  left: 70px;
+  color: white;
+  font-size: 4em;
+  z-index: 2;
+}
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.navigation button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.navigation button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+

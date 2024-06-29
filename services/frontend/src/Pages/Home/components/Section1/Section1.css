@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* Estilos gerais para o container principal */
+.card-wrapper {
+  margin: 8rem 0;
+}
+
+/* Estilos para o container dos cards */
+.card-container {
+  padding: 0 50px;
+}
+
+/* Estilos para o container do conteúdo dos cards */
+.card-content-wrapper {
+  padding: 0px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Estilos para o conteúdo individual dos cards */
+.card-content {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+  align-items: initial;
+}
+.card-content:hover {
+  background-color: #239cbed7
+
+}
+
+/* Estilos para o título dos cards */
+.card-title {
+  font-family: "Abel", sans-serif;
+  text-align: start;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+/* Estilos para a descrição dos cards */
+.card-description {
+  font-family: "Abel", sans-serif;
+  color: #000000;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+
+/* Responsividade para telas pequenas (280px a 1080px) */
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .card-wrapper {
+    margin: 0;
+  }
+
+  .card-container {
+    padding: 50px 0;
+  }
+
+  .card-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .card-content {
+    padding: 1rem 2rem;
+    border-radius: 0;
+  }
+
+  /* Estilo especial para a segunda carta */
+  .card-content:nth-of-type(2) {
+    background-color: var(--background);
+  }
+
+}
+
+/* Responsividade para telas muito pequenas (até 375px) */
+@media (max-width: 375px) {
+  .card-wrapper {
+    .card-content-wrapper {
+      .card-content {
+        background-color: #c1c1c1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 20px;
+        align-items: revert;
+      }
+
+      .card-description {
+        color: #c1c1c1;
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
+        font-size: 15px;
+        text-align: left;
+      }
+    }
+
+    /* Estilos adicionais para descrições e títulos em telas pequenas */
+    .description-1 {
+      margin-bottom: 100px;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 0 30px;
+      color: #c1c1c1;
+    }
+
+    .title-1 {
+      text-align: center;
+      color: #c1c1c1;
+      font-size: 1.5rem;
+    }
+  }
+}

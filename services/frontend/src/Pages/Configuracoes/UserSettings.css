@@ -1,0 +1,58 @@
+.user-settings-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.menu-lateral1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lateral1 h3 {
+  margin-bottom: 20px;
+  color: #2d6a4f;
+}
+
+.menu-lateral1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral1 li {
+  margin-bottom: 10px;
+}
+
+.menu-lateral1 li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.menu-lateral1 li a:hover {
+  text-decoration: underline;
+}
+
+.user-settings {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin-left: 290px;
+  margin-top: 10px;
+}
+
+.user-settings h2 {
+  margin-bottom: 20px;
+}
+
+.user-settings p {
+  margin: 10px 0;
+}

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: #0C4F6C;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1000; 
+}
+
+.menu-lateral.expandir {
+    width: 260px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+.btn-expandir > i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ulNav {
+    height: 100%;
+    list-style-type: none;
+}
+
+.item-menu {
+    transition: .2s;
+    list-style-type: none;
+}
+
+.ativo {
+    background-color: #02BAEE;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.item-menu:hover {
+    background: #02bbee31;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.aLinkNav {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.menu-lateral.expandir .txt-link {
+    margin-left: 20px;
+    opacity: 1;
+}
+
+.icon {
+    font-size: 28px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon2 {
+    color: rgb(212, 212, 212);
+    font-size: 28px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para o pop-up de confirmação */
+
+.confirm-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* pop-up acima de outros elementos */
+}
+
+.confirm-popup-content {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    padding: 40px;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirm-popup-content p {
+    font-family: 'Abel', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.confirm-popup-content button {
+    font-family: 'Abel', sans-serif;
+    margin: 0 10px;
+    padding: 7px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.confirm-popup-content button:first-of-type {
+    background-color: #02BAEE;
+    color: white;
+}
+
+.confirm-popup-content button:first-of-type:hover {
+    background-color: #0c7592;
+}
+
+.confirm-popup-content button:last-of-type {
+    background-color: #ccc;
+    color: #333;
+}
+
+.confirm-popup-content button:last-of-type:hover {
+    background-color: #b9b9b9;
+}
