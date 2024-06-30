@@ -2,19 +2,19 @@ import { FaBell } from "react-icons/fa";
 import React, { useEffect, useState } from 'react';
 import "./Alert.css"
 function Alert({ datas }) {
-    const [isNotificationOpen, setIsNotificationOpen] = useState(false)
-    const [alertCount, setAlertCount] = useState(0)
+  const [isNotificationOpen, setIsNotificationOpen] = useState(false)
+  const [alertCount, setAlertCount] = useState(0)
 
-    const toggleNotificationMenu = () => {
-      setIsNotificationOpen(!isNotificationOpen)
-    };
+  const toggleNotificationMenu = () => {
+    setIsNotificationOpen(!isNotificationOpen)
+  };
 
-    const alertMessages = datas.filter(data => data.status.includes("[ALERTA]"))
-   
-    useEffect(() => {
-      setAlertCount(alertMessages.length)
-    })
-    
+  const alertMessages = datas.filter(data => data.status.includes("[ALERTA]"))
+ 
+  useEffect(() => {
+    setAlertCount(alertMessages.length)
+  })
+      
     return (
         <>
         <header className="headerDashboard">
@@ -35,15 +35,14 @@ function Alert({ datas }) {
                   <ul className="notification-list">
                     {
                       datas &&
-                      alertMessages.map((data) => (
+                      datas.map((data) => (
                         <li className="notification-item" key={data.id}>{data.status}</li>
                       ))
                     }
                   </ul>
                 </div>
               )}
-                {/* <button className="alert-button">Alerta de notificação</button> */}
-
+              <button className="alert-button">Alerta de notificação</button>
             </div>
           </header>
         </>

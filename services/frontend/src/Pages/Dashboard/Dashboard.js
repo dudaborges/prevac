@@ -1,19 +1,16 @@
-import React, {  } from 'react';
+import React from 'react';
 import Navigation from '../../Pages/Components/Navigation/menuNav';
 import './dashboard.css';
 import Alert from '../Components/Alert/Alert';
 import { format } from 'date-fns';
 
-
 function Dashboard({ datas }) {
-
-
   return (
     <>
-      <Navigation /> 
+      <Navigation />
       <div className="dashboard-container">
         <main className="main-content">
-      <Alert datas={datas}/>
+          <Alert datas={datas} />
           <section className="sensor-status">
             <div className="buttons-dashboard">
               <button className='Button-sensors'>Sensores de Temperatura</button>
@@ -35,20 +32,16 @@ function Dashboard({ datas }) {
                 </tr>
               </thead>
               <tbody>
-
-              </tbody>
-              <tbody>
                 {datas.map(item => (
                   <tr className="sensor-table-row" key={item.id}>
-                  <td className="sensor-table-cell">{item.id}</td>
-                  <td className="sensor-table-cell">{item.pressure}</td>
-                  <td className="sensor-table-cell">{item.temperature}</td>
-                  <td className="sensor-table-cell">{item.status}</td>
-                  <td className="sensor-table-cell">{format(new Date(item.timestamp), 'dd/MM/yyyy HH:mm:ss')}</td>
-                </tr>
-                  ))}
+                    <td className="sensor-table-cell">{item.id}</td>
+                    <td className="sensor-table-cell">{item.pressure}</td>
+                    <td className="sensor-table-cell">{item.temperature}</td>
+                    <td className="sensor-table-cell">{item.status}</td>
+                    <td className="sensor-table-cell">{format(new Date(item.timestamp), 'dd/MM/yyyy HH:mm:ss')}</td>
+                  </tr>
+                ))}
               </tbody>
-
             </table>
           </section>
         </main>
@@ -56,5 +49,9 @@ function Dashboard({ datas }) {
     </>
   );
 }
+
+Dashboard.defaultProps = {
+  datas: []
+};
 
 export default Dashboard;

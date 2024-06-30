@@ -3,7 +3,7 @@ import random
 import time
 
 def generate_data():
-    url = 'http://0.0.0.0:5000/create'
+    url = 'http://localhost:5000/create'
 
     pressure_value = random.randint(999, 1022)  
     temperature_value = random.randint(29, 52)
@@ -21,7 +21,7 @@ def generate_data():
         print(f"Falha na requisição: {response.status_code} - {response.text}")
 
 
-for i in range(3):
+for i in range(2):
     time.sleep(1)
     generate_data()
     

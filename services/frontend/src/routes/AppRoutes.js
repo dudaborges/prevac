@@ -6,6 +6,7 @@ import Home from '../Pages/Home/HomeLanding';
 import UserSettings from '../Pages/Configuracoes/UserSettings';
 import Navigation from '../Pages/Components/Navigation/menuNav';
 import Dashboard from '../Pages/Dashboard/Dashboard';
+import NotificacoesPage from '../Pages/NotificacaoPage';
 
 const AppRoutes = () => {
   const [datas, setDatas] = useState()
@@ -26,9 +27,8 @@ const AppRoutes = () => {
         <Route path="/navigation" element={<Navigation />} />
         <Route path="/usersettings" element={<UserSettings />} />
         <Route path="/dashboard" element={<Dashboard datas={datas} />} />
-        {/* <Route path="/settings" element={<Settings />} /> */}
-        {/* <Route path="/configuracoes/usuarios" element={<UserPermissions />} />
-        <Route path="/configuracoes/notificacoes" element={<NotificationsAlerts />} /> */}
+        <Route path="/usersettings" element={<UserSettings />} />
+        <Route path="/notificacoes" element={<NotificacoesPage />} />
       </Routes>
     </Router>
   );

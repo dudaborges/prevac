@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+˜˜Instruções para logar no sistema no final da pagina.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -68,3 +70,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Para logar no sistema:
+Usuario adm: teste@prevac.com
+senha: teste123
+
+Usuario comum: mariaeduarda@prevac.com
+senha: maria123
