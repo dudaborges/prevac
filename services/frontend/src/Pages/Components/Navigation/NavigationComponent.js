@@ -43,6 +43,8 @@ function Navigationteste() {
     <div>
       <div className="BodyNav">
         <nav className="menu-lateral">
+        <div className="ContainerNav00">
+          <div className="containernav01">
           <div className="btn-expandir">
             <i id="btn-exp">
               <FaBars />
@@ -68,6 +70,10 @@ function Navigationteste() {
                 <span className="txt-link">Configurações</span>
               </Link>
             </li>
+            </ul>
+            </div>
+        <div className="containernav01">
+         <ul className="ulNav">
             <li className="item-menu">
               <a href="/" className="aLinkNav" onClick={handleLogoutClick}>
                 <span className="icon2">
@@ -77,7 +83,9 @@ function Navigationteste() {
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
+        </div>
+      </nav>
       </div>
       {showConfirm && (
         <div className="confirm-popup">

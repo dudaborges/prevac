@@ -2,6 +2,8 @@ import React from 'react';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable'; 
 import { format } from 'date-fns';
+import "../ButtonPDF/ExportPDFButton.css"
+import { FaFilePdf } from "react-icons/fa6";
 
 const ExportPDFButton = ({ datas }) => {
   const handleExportPDF = () => {
@@ -18,13 +20,15 @@ const ExportPDFButton = ({ datas }) => {
       ])
     });
 
-    doc.save('dashboard.pdf');
+    doc.save('relatorio.pdf');
   };
 
   return (
-    <button className="Button-export" onClick={handleExportPDF}>
-      Exportar como PDF
-    </button>
+
+    <div className='elemento'>
+        <FaFilePdf className="Button-export" onClick={handleExportPDF}/>
+        <span class="texto-hover">Exportar como PDF</span>
+    </div>
   );
 };
 

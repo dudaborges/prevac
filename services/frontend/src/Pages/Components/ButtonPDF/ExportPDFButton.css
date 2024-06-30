@@ -1,0 +1,47 @@
+/* .Button-export{
+    background-color: #cfcece;
+    border: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.Button-export:hover{
+    cursor: pointer;
+    background-color: #02bbee33;
+
+} */
+
+.Button-export{
+    font-size: 28px;
+    color: #464646;
+}
+.Button-export:hover{
+    color: #0c4f6c;
+}
+.elemento {
+  position: relative;
+  display: inline-block;
+}
+
+.texto-hover {
+  visibility: hidden;
+  background-color: #02baee;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 0.8em;
+  padding: 5px 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -90px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.elemento:hover .texto-hover {
+  visibility: visible;
+  opacity: 1;
+}

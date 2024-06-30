@@ -18,7 +18,7 @@ function Alert({ datas }) {
     return (
         <>
         <header className="headerDashboard">
-            <h1 className="header-title">Dashboard principal</h1>
+            <h1 className="header-title">Relatório Geral</h1>
             <div className="notification-wrapper">
               <div className="notification">
                 <span className="notification-badge">{alertCount}</span>

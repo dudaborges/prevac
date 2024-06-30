@@ -14,15 +14,20 @@ function Dashboard({ datas }) {
           <Alert datas={datas} />
           <section className="sensor-status">
             <div className="buttons-dashboard">
+              <div className='classButtons-sensors'>
               <button className='Button-sensors'>Sensores de Temperatura</button>
               <button className='Button-sensors'>Sensores de Pressão</button>
               <button className='Button-sensors'>Câmeras</button>
+              </div>
+              <div>
+              <ExportPDFButton datas={datas} /> 
+              </div>
             </div>
             <div className="status-header">
               <h2 className="status-title">Status geral dos sensores:</h2>
               <span className="status-ok">OK</span>
             </div>
-            <ExportPDFButton datas={datas} /> {/* Adicione o botão de exportar PDF aqui */}
+          
             <table className="sensor-table">
               <thead>
                 <tr>

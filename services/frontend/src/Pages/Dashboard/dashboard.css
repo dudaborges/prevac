@@ -67,9 +67,14 @@
 }
 
 .buttons-dashboard {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 20px;
+}
+.classButtons-sensors{
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .Button-sensors {
