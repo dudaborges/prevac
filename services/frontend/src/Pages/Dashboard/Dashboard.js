@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../../Pages/Components/Navigation/menuNav';
 import './dashboard.css';
 import Alert from '../Components/Alert/Alert';
+import ExportPDFButton from '../Components/ButtonPDF/ExportPDFButton ';
 import { format } from 'date-fns';
 
 function Dashboard({ datas }) {
@@ -21,6 +22,7 @@ function Dashboard({ datas }) {
               <h2 className="status-title">Status geral dos sensores:</h2>
               <span className="status-ok">OK</span>
             </div>
+            <ExportPDFButton datas={datas} /> {/* Adicione o botão de exportar PDF aqui */}
             <table className="sensor-table">
               <thead>
                 <tr>
