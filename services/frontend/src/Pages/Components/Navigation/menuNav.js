@@ -22,10 +22,13 @@ const Navigation = () => {
 
         btnExp.addEventListener('click', function() {
             menuSide.classList.toggle('expandir');
-            if (menuSide.classList.contains('expandir')) {
-                dashboardContainer.style.marginLeft = '260px';
-            } else {
-                dashboardContainer.style.marginLeft = '80px';
+            const dashboardContainer = document.querySelector('.dashboard-container');
+            if (dashboardContainer) {
+                if (menuSide.classList.contains('expandir')) {
+                    dashboardContainer.style.marginLeft = '170px';
+                } else {
+                    dashboardContainer.style.marginLeft = '1px';
+                }
             }
         });
 

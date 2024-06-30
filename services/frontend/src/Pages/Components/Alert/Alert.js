@@ -42,7 +42,6 @@ function Alert({ datas }) {
                   </ul>
                 </div>
               )}
-              <button className="alert-button">Alerta de notificação</button>
             </div>
           </header>
         </>

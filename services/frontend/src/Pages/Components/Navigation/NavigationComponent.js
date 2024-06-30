@@ -1,12 +1,28 @@
 import "./nav.css";
 import { FaBars, FaHome, FaUserCircle, FaSignOutAlt } from "react-icons/fa";
 import { IoSettingsSharp } from "react-icons/io5";
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Navigationteste() {
-  const navigate = useNavigate();
+  const location = useLocation();
   const [showConfirm, setShowConfirm] = useState(false);
+  const [activeItem, setActiveItem] = useState("");
+
+  useEffect(() => {
+    // Atualiza o estado activeItem com base na localização atual
+    switch (location.pathname) {
+      case "/dashboard":
+        setActiveItem("home");
+        break;
+      case "/usersettings":
+        setActiveItem("settings");
+        break;
+      default:
+        setActiveItem("");
+        break;
+    }
+  }, [location]);
 
   const handleLogoutClick = (e) => {
     e.preventDefault();
@@ -15,7 +31,8 @@ function Navigationteste() {
 
   const handleConfirmLogout = () => {
     setShowConfirm(false);
-    navigate("/");
+    // Redireciona para a página inicial após logout
+    window.location.href = "/";
   };
 
   const handleCancelLogout = () => {
@@ -32,7 +49,7 @@ function Navigationteste() {
             </i>
           </div>
           <ul className="ulNav">
-            <li className="item-menu ativo">
+            <li className={`item-menu ${activeItem === "home" ? "ativo" : ""}`}>
               <Link className="aLinkNav" to="/dashboard">
                 <span className="icon">
                   {" "}
@@ -41,9 +58,11 @@ function Navigationteste() {
                 <span className="txt-link">Home</span>
               </Link>
             </li>
-            <li className="item-menu">
+
+            <li className={`item-menu ${activeItem === "settings" ? "ativo" : ""}`}>
               <Link className="aLinkNav" to="/usersettings">
                 <span className="icon">
+                  {" "}
                   <IoSettingsSharp />
                 </span>
                 <span className="txt-link">Configurações</span>
