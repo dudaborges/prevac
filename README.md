@@ -1,14 +1,27 @@
-# Prevac 
+# Prevac
 
-## Main Technologies
-<ul>
-	<li>Python v3.9.13</li>
-	<li>Fastapi v0.97.0</li>
-	<li>React JS</li>
-	<li>Node v20.11.1</li>
-</ul>
+- INSTRUÇÕES PARA LOGAR NO SISTEMA NO FINAL DA PÁGINA.
 
-## How to execute the project with Docker container
+## O que é o Prevac
+
+O **Prevac** é um sistema de segurança industrial em tempo real, que utiliza uma rede sofisticada de sensores IoT para monitoramento contínuo de temperatura e pressão. O sistema fornece um painel intuitivo para monitoramento, alertas instantâneos em caso de anomalias, relatórios detalhados e desligamento automático em situações críticas, garantindo conformidade com normas regulamentadoras.
+
+### Funcionalidades
+
+- **Monitoramento Contínuo**: Acompanhe a segurança em tempo real através de um dashboard intuitivo.
+- **Alertas Instantâneos**: Receba notificações imediatas ao detectar anomalias.
+- **Relatórios de Risco**: Relatórios detalhados sobre a presença de pessoas em áreas de risco.
+- **Conformidade Normativa**: Alinhamento com normas regulamentadoras.
+
+## Tecnologias Principais
+
+- **Python** v3.9.13
+- **FastAPI** v0.97.0
+- **React JS**
+- **Node.js** v20.11.1
+
+
+## Como Executar o Projeto com Docker
 
 <p><strong>Build the images:</strong></p>
 
@@ -34,7 +47,7 @@ $ docker run -d -p 5000:5000 --name backend backend
 $ docker run -d -p 3000:3000 --name frontend frontend
 ```
 
-## How to execute the project with docker-compose
+## Como Executar o Projeto com Docker-Compose
 
 <p><strong>Build the image and spin up the container:</strong></p>
 
@@ -93,3 +106,35 @@ $ docker-compose exec backend aerich migrate
 ```
 $ docker-compose exec backend aerich upgrade
 ```
+
+# Instruções para o Frontend
+ Passos para Executar o Frontend:
+ 
+ 1. Navegue até a pasta onde está o frontend:
+```
+cd prevac/services/frontend
+```
+2. Instale as dependências:
+```
+npm install
+```
+3. Instale o Firebase:
+```
+npm i firebase
+```
+4. Inicie o servidor de desenvolvimento:
+ ```
+npm start
+```
+- Acesse http://localhost:3000 para visualizar no navegador.
+
+# Credenciais de Login
+- Usuário Administrador:
+  
+E-mail: teste@prevac.com <br>
+Senha: stefani123
+
+- Usuário Comum:
+
+E-mail: mariaeduarda@prevac.com <br>
+Senha: maria123
