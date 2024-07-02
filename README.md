@@ -1,21 +1,15 @@
 # Prevac
 
-- Instruções para criar o banco de dados localmente
-- Intruções para rodar o projeto
-- Instruções para logar no sistema
+The **Prevac** is a real-time industrial safety system that uses a sophisticated network of IoT sensors for continuous temperature and pressure monitoring. The system provides an intuitive dashboard for monitoring, instant alerts in case of anomalies, detailed reports, and automatic shutdown in critical situations, ensuring compliance with regulatory standards.
 
-## O que é o Prevac
+### Features
 
-O **Prevac** é um sistema de segurança industrial em tempo real, que utiliza uma rede sofisticada de sensores IoT para monitoramento contínuo de temperatura e pressão. O sistema fornece um painel intuitivo para monitoramento, alertas instantâneos em caso de anomalias, relatórios detalhados e desligamento automático em situações críticas, garantindo conformidade com normas regulamentadoras.
+- **Continuous Monitoring:** Track safety in real-time through an intuitive dashboard.
+- **Instant Alerts:** Receive immediate notifications upon detecting anomalies.
+- **Risk Reports:** Detailed reports on the presence of people in hazardous areas.
+- **Regulatory Compliance:** Alignment with regulatory standards.
 
-### Funcionalidades
-
-- **Monitoramento Contínuo**: Acompanhe a segurança em tempo real através de um dashboard intuitivo.
-- **Alertas Instantâneos**: Receba notificações imediatas ao detectar anomalias.
-- **Relatórios de Risco**: Relatórios detalhados sobre a presença de pessoas em áreas de risco.
-- **Conformidade Normativa**: Alinhamento com normas regulamentadoras.
-
-## Tecnologias Principais
+## Main Technologies
 
 - **Python** v3.9.13
 - **FastAPI** v0.97.0
@@ -65,13 +59,13 @@ $ docker-compose exec backend aerich migrate
 $ docker-compose exec backend aerich upgrade
 ```
 
-# Credenciais de Login
-- Usuário Administrador:
+# Login credentials
+- Administrator User:
   
-E-mail: teste@prevac.com <br>
-Senha: stefani123
+Email: teste@prevac.com <br>
+Password: stefani123
 
-- Usuário Comum:
+- Regular user:
 
-E-mail: mariaeduarda@prevac.com <br>
-Senha: maria123
+Email: mariaeduarda@prevac.com <br>
+Password: maria123
