@@ -7,7 +7,11 @@ __pycache__/
 
 *.log
 
-# local env files
+# Migrations
+/migrations
+pyproject.toml
+
+# Local env files
 .env.local
 .env.*.local
 my_venv
