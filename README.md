@@ -13,9 +13,9 @@ The **Prevac** is a real-time industrial safety system that uses a sophisticated
 
 - **Python** v3.9.13
 - **FastAPI** v0.97.0
-- **React JS**
+- **React JS** v18.0.0
 - **Node.js** v20.11.1
-- **Docker** v20.11.1
+- **Docker** v20.10.11
 
 
 ## How to Run the Project
