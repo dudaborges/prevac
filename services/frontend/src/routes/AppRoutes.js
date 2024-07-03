@@ -7,7 +7,7 @@ import UserSettings from '../Pages/Configuracoes/UserSettings';
 import Navigation from '../Pages/Components/Navigation/menuNav';
 import Dashboard from '../Pages/Dashboard/Dashboard';
 import NotificacoesPage from '../Pages/NotificacaoPage';
-
+import Contact from '../Pages/Contact/Contact';
 const AppRoutes = () => {
   const [datas, setDatas] = useState()
 
@@ -29,6 +29,7 @@ const AppRoutes = () => {
         <Route path="/dashboard" element={<Dashboard datas={datas} />} />
         <Route path="/usersettings" element={<UserSettings />} />
         <Route path="/notificacoes" element={<NotificacoesPage />} />
+        <Route path="/contato" element={<Contact />} />
       </Routes>
     </Router>
   );

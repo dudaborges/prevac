@@ -15,6 +15,9 @@ const Configuracoes = () => {
           <li>
             <Link to="/notificacoes">Notificações e alertas</Link>
           </li>
+          <li>  
+            <Link to="/contato">Formulário de atendimento</Link>
+          </li>
         </ul>
       </div>
     </div>
