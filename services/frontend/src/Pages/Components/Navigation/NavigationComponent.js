@@ -51,7 +51,7 @@ function Navigationteste() {
             </i>
           </div>
           <ul className="ulNav">
-            <li className={`item-menu ${activeItem === "home" ? "ativo" : ""}`}>
+            <li className="">
               <Link className="aLinkNav" to="/dashboard">
                 <span className="icon">
                   {" "}
@@ -61,7 +61,7 @@ function Navigationteste() {
               </Link>
             </li>
 
-            <li className={`item-menu ${activeItem === "settings" ? "ativo" : ""}`}>
+            <li className="">
               <Link className="aLinkNav" to="/usersettings">
                 <span className="icon">
                   {" "}
